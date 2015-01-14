@@ -11,9 +11,9 @@ angular.module('synergyApp')
 
     // Allowed bbcode tags
     var valid_tags_re = /^\/?(?:b|i|u|pre|center|samp|code|colou?r|size|noparse|url|link|s|q|quote|blockquote|video|img|u?list|li)$/i;
-    // var quote_re = /\[(quote='([^"]*)'\s?pid='([^"]*)'\s?dateline='([^"]*)'\])([^"]*)\[(\/quote)\]/g;
-    // var any_bbcode_re = /(?:\[([a-z]{1,16})(?:(?:=)(?:"|')?([a-zA-Z0-9]*)(?:"|')?)?\s?(?:([a-z]{1,3})(?:=)(?:"|')([0-9]{1,100})(?:"|'))?\s?(?:([a-z]{1,16})(?:=)(?:"|')([0-9]{1,16})(?:"|'))?(?:\])([^"]*)(?:\[\/)([a-z]{1,16})(?:\]))/ig;
-    // var quote_start_re = /\[quote[^"]*\]([^"]*)\[\/quote\]/;
+
+    // color tags
+    var color_tags_re = /^(:?black|silver|gray|white|maroon|red|purple|fuchsia|green|lime|olive|yellow|navy|blue|teal|aqua|#(?:[0-9a-f]{3})?[0-9a-f]{3})$/i;
 
     // check for valid tag
     function validTag(tag)
